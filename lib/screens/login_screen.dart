@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Image.asset('assets/images/onboarding.jpg'),
           ),
           CustomButton(
-            text: 'Login',
+            text: 'Login ',
             onPressed: () {},
           )
         ],

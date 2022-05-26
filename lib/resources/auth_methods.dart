@@ -5,8 +5,8 @@ import 'package:google_sign_in/google_sign_in.dart';
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
-  signInWithGoogle() async {
+  bool res = false;
+  Future<bool> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
@@ -27,8 +27,11 @@ class AuthMethods {
             'uid': user.uid,
             'profilePhoto': user.photoURL
           });
+          res = true;
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      res = false;
+    }
   }
 }

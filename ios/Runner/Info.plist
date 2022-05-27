@@ -47,5 +47,21 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.14294579966-i00kegr5oqiurodnetgifcoit4bd3n5t</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+    	<key>NSAllowsLocalNetworking</key>
+    	<true/>
+	</dict>
 </dict>
 </plist>

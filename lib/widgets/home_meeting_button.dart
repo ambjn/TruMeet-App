@@ -21,8 +21,8 @@ class HomeMeetingButton extends StatelessWidget {
           Container(
             width: 60,
             height: 60,
-            color: buttonColor,
             decoration: BoxDecoration(
+                color: buttonColor,
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(

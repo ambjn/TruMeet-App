@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trumeet/screens/home_screen.dart';
 import 'package:trumeet/screens/login_screen.dart';
 import 'package:trumeet/utils/colors.dart';
 
@@ -15,7 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      routes: {'/login': (context) => LoginScreen()},
+      routes: {
+        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomeScreen()
+      },
       home: LoginScreen(),
     );
   }

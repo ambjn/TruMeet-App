@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:trumeet/resources/auth_methods.dart';
 import 'package:trumeet/screens/home_screen.dart';
 import 'package:trumeet/screens/login_screen.dart';
+import 'package:trumeet/screens/video_call_screen.dart';
 import 'package:trumeet/utils/colors.dart';
 
 void main() async {
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
       ),
       routes: {
-        '/login': (context) => LoginScreen(),
-        '/home': (context) => HomeScreen()
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/video-call': (context) => VideoCallScreen()
       },
       home: StreamBuilder(
         stream: AuthMethods().authChanges,

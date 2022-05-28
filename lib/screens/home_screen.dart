@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:trumeet/screens/history_meeting_screen.dart';
+import 'package:trumeet/screens/meeting_screen.dart';
 import 'package:trumeet/utils/colors.dart';
-import 'package:trumeet/widgets/home_meeting_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -11,13 +12,18 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _page = 0;
-
   onPageChanged(int page) {
     setState(() {
       _page = page;
     });
   }
 
+  List<Widget> pages = [
+    MeetingScreen(),
+    const HistoryMeetingScreen(),
+    const Text("Contacts"),
+    const Text("Settings")
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,42 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text("meet & chat"),
         backgroundColor: backgroundColor,
       ),
-      body: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              HomeMeetingButton(
-                onPressed: () {},
-                text: "new meeting",
-                icon: Icons.videocam,
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                text: "join meeting",
-                icon: Icons.add_box_rounded,
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                text: "schedule meeting",
-                icon: Icons.calendar_today,
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                text: "share screen",
-                icon: Icons.arrow_upward_rounded,
-              ),
-            ],
-          ),
-          const Expanded(
-              child: Center(
-            child: Text(
-              "create/join meetings with just a click",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-            ),
-          ))
-        ],
-      ),
+      body: pages[_page],
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: footerColor,
           selectedItemColor: Colors.white,
@@ -95,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.settings_outlined,
               ),
               label: 'settings',
-            )
+            ),
           ]),
     );
   }

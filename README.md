@@ -1,4 +1,4 @@
-# trumeet
+# TruMeet 
 
 A new Flutter project.
 

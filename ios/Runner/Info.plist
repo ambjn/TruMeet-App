@@ -58,6 +58,7 @@
 			</array>
 		</dict>
 	</array>
+	
 	<key>NSAppTransportSecurity</key>
 	<dict>
     	<key>NSAllowsLocalNetworking</key>

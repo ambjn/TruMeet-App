@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:trumeet/resources/auth_methods.dart';
 import 'package:trumeet/screens/history_meeting_screen.dart';
 import 'package:trumeet/screens/meeting_screen.dart';
 import 'package:trumeet/utils/colors.dart';
+import 'package:trumeet/widgets/custom_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     MeetingScreen(),
     const HistoryMeetingScreen(),
     const Text("Contacts"),
-    const Text("Settings")
+    CustomButton(text: 'log out', onPressed: () => AuthMethods().signOut())
   ];
   @override
   Widget build(BuildContext context) {

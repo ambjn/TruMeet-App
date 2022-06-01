@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'TruMeet App',
       theme: ThemeData(
         brightness: Brightness.dark,
-        // fontFamily: 'Raleway',
+        fontFamily: 'Raleway',
       ),
       routes: {
         '/login': (context) => const LoginScreen(),

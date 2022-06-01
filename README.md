@@ -46,5 +46,5 @@ In the command terminal, run the following commands:
 
 ## Screenshots:
 
-<img src = '' alt='screenshot-of-app'>
-<img src = '' alt='screenshot-of-app'>
+<img src = 'https://github.com/ambjn/TruMeet-App/blob/master/screenshots/1.png' alt='screenshot-of-app'>
+<img src = 'https://github.com/ambjn/TruMeet-App/blob/master/screenshots/2.png' alt='screenshot-of-app'>

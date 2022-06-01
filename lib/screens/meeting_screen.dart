@@ -39,23 +39,23 @@ class MeetingScreen extends StatelessWidget {
               text: "join meeting",
               icon: Icons.add_box_rounded,
             ),
-            HomeMeetingButton(
-              onPressed: () {},
-              text: "schedule meeting",
-              icon: Icons.calendar_today,
-            ),
-            HomeMeetingButton(
-              onPressed: () {},
-              text: "share screen",
-              icon: Icons.arrow_upward_rounded,
-            ),
+            // HomeMeetingButton(
+            //   onPressed: () {},
+            //   text: "schedule meeting",
+            //   icon: Icons.calendar_today,
+            // ),
+            // HomeMeetingButton(
+            //   onPressed: () {},
+            //   text: "share screen",
+            //   icon: Icons.arrow_upward_rounded,
+            // ),
           ],
         ),
         const Expanded(
             child: Center(
           child: Text(
-            "create/join meetings with just a click",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            "create / join \nmeetings with just a click",
+            style: TextStyle(fontSize: 18),
           ),
         ))
       ],

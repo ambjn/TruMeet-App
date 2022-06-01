@@ -4,12 +4,10 @@ import 'package:trumeet/resources/auth_methods.dart';
 import 'package:trumeet/screens/home_screen.dart';
 import 'package:trumeet/screens/login_screen.dart';
 import 'package:trumeet/screens/video_call_screen.dart';
-import 'package:trumeet/utils/colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(const MyApp());
 }
 
@@ -21,8 +19,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TruMeet App',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        // fontFamily: 'Raleway',
       ),
       routes: {
         '/login': (context) => const LoginScreen(),

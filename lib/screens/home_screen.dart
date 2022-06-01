@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> pages = [
     MeetingScreen(),
     const HistoryMeetingScreen(),
-    const Text("Contacts"),
     CustomButton(text: 'log out', onPressed: () => AuthMethods().signOut())
   ];
   @override
@@ -42,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
           unselectedItemColor: Colors.grey,
           onTap: onPageChanged,
           currentIndex: _page,
-          type: BottomNavigationBarType.fixed, // baad meh dekhna
+          type: BottomNavigationBarType.fixed,
           unselectedFontSize: 14,
           items: const [
             BottomNavigationBarItem(
@@ -57,12 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               label: 'meetings',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_outline,
-              ),
-              label: 'contacts',
-            ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(
+            //     Icons.person_outline,
+            //   ),
+            //   label: 'contacts',
+            // ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.settings_outlined,

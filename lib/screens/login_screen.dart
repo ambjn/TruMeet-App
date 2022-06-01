@@ -27,7 +27,17 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.symmetric(
               vertical: 38,
             ),
-            child: Image.asset('assets/images/onboarding.jpg'),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                'assets/images/on1.png',
+                width: 220,
+                height: 220,
+                fit: BoxFit.cover,
+                color: Colors.grey.withOpacity(1.0),
+                colorBlendMode: BlendMode.dstIn,
+              ),
+            ),
           ),
           CustomButton(
             text: 'Login ',

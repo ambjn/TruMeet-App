@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "14294579966",
+    "project_id": "trumeet-app",
+    "storage_bucket": "trumeet-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14294579966:android:248ab7319a60fbda4883af",
+        "android_client_info": {
+          "package_name": "com.example.trumeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14294579966-bak7cdmmfkjpu7b4qa7796rtbel4t7vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trumeet",
+            "certificate_hash": "df940060136631ea5917956bdbe1a7a849bf42d3"
+          }
+        },
+        {
+          "client_id": "14294579966-08l8at3gkpfk3st5vj4e2t631m1u4i33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi2HJ6EMTZaHBhgXHyw6n3z61eJflWeZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14294579966-08l8at3gkpfk3st5vj4e2t631m1u4i33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "14294579966-i00kegr5oqiurodnetgifcoit4bd3n5t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.trumeet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

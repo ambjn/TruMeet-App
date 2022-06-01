@@ -2,10 +2,10 @@
 
 ## About:
 
-Trumeet is a full-stack flutter app that let's you create & join meetings, <br>
-& also share contents
+Trumeet is a full-stack flutter app that let's you create & join meetings,
+& also share contents.
 
-## Features
+## Features:
 
 1. Authetication through Google Sign In
 2. Create New Meeting & Join Meeting
@@ -31,7 +31,7 @@ and many more features would be added soon :)
 5. jitsi_meet: ^4.0.0
 6. intl: ^0.17.0
 
-## Tech Stack Used
+## Tech Stack Used:
 
 **Server**: Firebase Auth, Firestore, Google Sign In, Jitsi Meet
 **Client**: Flutter

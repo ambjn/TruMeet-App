@@ -33,7 +33,7 @@ and many more features would be added soon :)
 
 ## Tech Stack Used:
 
-**Server**: Firebase Auth, Firestore, Google Sign In, Jitsi Meet
+**Server**: Firebase Auth, Firestore, Google Sign In, Jitsi Meet <br>
 **Client**: Flutter
 
 ### Installation:

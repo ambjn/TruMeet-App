@@ -1,16 +1,50 @@
-# TruMeet 
+# Trumeet
 
-A new Flutter project.
+## About:
 
-## Getting Started
+Trumeet is a full-stack flutter app that let's you create & join meetings, <br>
+& also share contents
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+1. Authetication through Google Sign In
+2. Create New Meeting & Join Meeting
+3. Mute/Unmute Audio & Video
+4. Change Default Display Name while Joining
+5. Raise Hand
+6. Mute Everyone
+7. Chat
+8. Start Live Stream, Screen Share
+9. Switch Front/Rear Camera
+10. Picture in Picture
+11. Disable Camera
+12. See Meeting History
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+and many more features would be added soon :)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Packages:
+
+1. firebase_core: ^1.17.1
+2. cloud_firestore: ^3.1.17
+3. firebase_auth: ^3.3.19
+4. google_sign_in: ^5.3.2
+5. jitsi_meet: ^4.0.0
+6. intl: ^0.17.0
+
+## Tech Stack Used
+
+**Server**: Firebase Auth, Firestore, Google Sign In, Jitsi Meet
+**Client**: Flutter
+
+### Installation:
+
+In the command terminal, run the following commands:
+
+    $ git clone https://github.com/ambjn/TruMeet-App.git
+    $ cd TruMeet-App
+    $ flutter run
+
+## Screenshots:
+
+<img src = '' alt='screenshot-of-app'>
+<img src = '' alt='screenshot-of-app'>
